@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA79D7CF152C197500D439DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7CE152C197500D439DA /* UIKit.framework */; };
+		CA79D7D1152C197500D439DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7D0152C197500D439DA /* Foundation.framework */; };
+		CA79D7D3152C197500D439DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7D2152C197500D439DA /* CoreGraphics.framework */; };
+		CA79D7D9152C197500D439DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA79D7D7152C197500D439DA /* InfoPlist.strings */; };
+		CA79D7DB152C197500D439DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D7DA152C197500D439DA /* main.m */; };
+		CA79D7DF152C197500D439DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D7DE152C197500D439DA /* AppDelegate.m */; };
+		CA79D805152C1A0200D439DA /* BindableTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA79D802152C1A0200D439DA /* BindableTextFieldView.xib */; };
+		CA79D806152C1A0200D439DA /* BindableTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D804152C1A0200D439DA /* BindableTextFieldViewController.m */; };
+		CA79D80A152C23FF00D439DA /* BTString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D809152C23FF00D439DA /* BTString.m */; };
+		CA79D812152C2D0A00D439DA /* BindableTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D811152C2D0A00D439DA /* BindableTextViewViewController.m */; };
+		CA79D814152C2D2400D439DA /* BindableTextViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA79D813152C2D2400D439DA /* BindableTextViewView.xib */; };
+		CA79D817152C5CE300D439DA /* BindableSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D816152C5CE200D439DA /* BindableSliderViewController.m */; };
+		CA79D81A152C5D0300D439DA /* BTNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D819152C5D0300D439DA /* BTNumber.m */; };
+		CA79D848152C6D6100D439DA /* BindableSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA79D847152C6D6100D439DA /* BindableSliderView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA79D7CA152C197500D439DA /* BindableTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindableTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA79D7CE152C197500D439DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CA79D7D0152C197500D439DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA79D7D2152C197500D439DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CA79D7D6152C197500D439DA /* BindableTypes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BindableTypes-Info.plist"; sourceTree = "<group>"; };
+		CA79D7D8152C197500D439DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA79D7DA152C197500D439DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA79D7DC152C197500D439DA /* BindableTypes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BindableTypes-Prefix.pch"; sourceTree = "<group>"; };
+		CA79D7DD152C197500D439DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA79D7DE152C197500D439DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA79D802152C1A0200D439DA /* BindableTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindableTextFieldView.xib; sourceTree = "<group>"; };
+		CA79D803152C1A0200D439DA /* BindableTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindableTextFieldViewController.h; sourceTree = "<group>"; };
+		CA79D804152C1A0200D439DA /* BindableTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindableTextFieldViewController.m; sourceTree = "<group>"; };
+		CA79D808152C23FF00D439DA /* BTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTString.h; path = BindableTypes/BTString.h; sourceTree = "<group>"; };
+		CA79D809152C23FF00D439DA /* BTString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTString.m; path = BindableTypes/BTString.m; sourceTree = "<group>"; };
+		CA79D810152C2D0A00D439DA /* BindableTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindableTextViewViewController.h; sourceTree = "<group>"; };
+		CA79D811152C2D0A00D439DA /* BindableTextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindableTextViewViewController.m; sourceTree = "<group>"; };
+		CA79D813152C2D2400D439DA /* BindableTextViewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindableTextViewView.xib; sourceTree = "<group>"; };
+		CA79D815152C5CE200D439DA /* BindableSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindableSliderViewController.h; sourceTree = "<group>"; };
+		CA79D816152C5CE200D439DA /* BindableSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindableSliderViewController.m; sourceTree = "<group>"; };
+		CA79D818152C5D0300D439DA /* BTNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTNumber.h; path = BindableTypes/BTNumber.h; sourceTree = "<group>"; };
+		CA79D819152C5D0300D439DA /* BTNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTNumber.m; path = BindableTypes/BTNumber.m; sourceTree = "<group>"; };
+		CA79D847152C6D6100D439DA /* BindableSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindableSliderView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA79D7C7152C197500D439DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA79D7CF152C197500D439DA /* UIKit.framework in Frameworks */,
+				CA79D7D1152C197500D439DA /* Foundation.framework in Frameworks */,
+				CA79D7D3152C197500D439DA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA79D7BF152C197500D439DA = {
+			isa = PBXGroup;
+			children = (
+				CA79D7D4152C197500D439DA /* BindableTypes */,
+				CA79D7CD152C197500D439DA /* Frameworks */,
+				CA79D7CB152C197500D439DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA79D7CB152C197500D439DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D7CA152C197500D439DA /* BindableTypes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA79D7CD152C197500D439DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D7CE152C197500D439DA /* UIKit.framework */,
+				CA79D7D0152C197500D439DA /* Foundation.framework */,
+				CA79D7D2152C197500D439DA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA79D7D4152C197500D439DA /* BindableTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D7FE152C19C500D439DA /* Resources */,
+				CA79D7FD152C19C000D439DA /* Classes */,
+				CA79D7D5152C197500D439DA /* Supporting Files */,
+			);
+			path = BindableTypes;
+			sourceTree = "<group>";
+		};
+		CA79D7D5152C197500D439DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D7D6152C197500D439DA /* BindableTypes-Info.plist */,
+				CA79D7D7152C197500D439DA /* InfoPlist.strings */,
+				CA79D7DA152C197500D439DA /* main.m */,
+				CA79D7DC152C197500D439DA /* BindableTypes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA79D7FD152C19C000D439DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D801152C19DB00D439DA /* AppDelegate */,
+				CA79D800152C19D400D439DA /* Types */,
+				CA79D7FF152C19CD00D439DA /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CA79D7FE152C19C500D439DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D807152C1A0800D439DA /* UI */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CA79D7FF152C19CD00D439DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D803152C1A0200D439DA /* BindableTextFieldViewController.h */,
+				CA79D804152C1A0200D439DA /* BindableTextFieldViewController.m */,
+				CA79D810152C2D0A00D439DA /* BindableTextViewViewController.h */,
+				CA79D811152C2D0A00D439DA /* BindableTextViewViewController.m */,
+				CA79D815152C5CE200D439DA /* BindableSliderViewController.h */,
+				CA79D816152C5CE200D439DA /* BindableSliderViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CA79D800152C19D400D439DA /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D808152C23FF00D439DA /* BTString.h */,
+				CA79D809152C23FF00D439DA /* BTString.m */,
+				CA79D818152C5D0300D439DA /* BTNumber.h */,
+				CA79D819152C5D0300D439DA /* BTNumber.m */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		CA79D801152C19DB00D439DA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D7DD152C197500D439DA /* AppDelegate.h */,
+				CA79D7DE152C197500D439DA /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CA79D807152C1A0800D439DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D802152C1A0200D439DA /* BindableTextFieldView.xib */,
+				CA79D813152C2D2400D439DA /* BindableTextViewView.xib */,
+				CA79D847152C6D6100D439DA /* BindableSliderView.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA79D7C9152C197500D439DA /* BindableTypes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes" */;
+			buildPhases = (
+				CA79D7C6152C197500D439DA /* Sources */,
+				CA79D7C7152C197500D439DA /* Frameworks */,
+				CA79D7C8152C197500D439DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BindableTypes;
+			productName = BindableTypes;
+			productReference = CA79D7CA152C197500D439DA /* BindableTypes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA79D7C1152C197500D439DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = CoreInvader;
+			};
+			buildConfigurationList = CA79D7C4152C197500D439DA /* Build configuration list for PBXProject "BindableTypes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA79D7BF152C197500D439DA;
+			productRefGroup = CA79D7CB152C197500D439DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA79D7C9152C197500D439DA /* BindableTypes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA79D7C8152C197500D439DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA79D7D9152C197500D439DA /* InfoPlist.strings in Resources */,
+				CA79D805152C1A0200D439DA /* BindableTextFieldView.xib in Resources */,
+				CA79D814152C2D2400D439DA /* BindableTextViewView.xib in Resources */,
+				CA79D848152C6D6100D439DA /* BindableSliderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA79D7C6152C197500D439DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA79D7DB152C197500D439DA /* main.m in Sources */,
+				CA79D7DF152C197500D439DA /* AppDelegate.m in Sources */,
+				CA79D806152C1A0200D439DA /* BindableTextFieldViewController.m in Sources */,
+				CA79D80A152C23FF00D439DA /* BTString.m in Sources */,
+				CA79D812152C2D0A00D439DA /* BindableTextViewViewController.m in Sources */,
+				CA79D817152C5CE300D439DA /* BindableSliderViewController.m in Sources */,
+				CA79D81A152C5D0300D439DA /* BTNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA79D7D7152C197500D439DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA79D7D8152C197500D439DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA79D7F4152C197500D439DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA79D7F5152C197500D439DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA79D7F7152C197500D439DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BindableTypes/BindableTypes-Prefix.pch";
+				INFOPLIST_FILE = "BindableTypes/BindableTypes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA79D7F8152C197500D439DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BindableTypes/BindableTypes-Prefix.pch";
+				INFOPLIST_FILE = "BindableTypes/BindableTypes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA79D7C4152C197500D439DA /* Build configuration list for PBXProject "BindableTypes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA79D7F4152C197500D439DA /* Debug */,
+				CA79D7F5152C197500D439DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA79D7F7152C197500D439DA /* Debug */,
+				CA79D7F8152C197500D439DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA79D7C1152C197500D439DA /* Project object */;
+}
