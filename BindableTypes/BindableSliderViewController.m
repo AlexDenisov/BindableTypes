@@ -19,14 +19,12 @@
 @synthesize stepperLabel;
 @synthesize slider;
 @synthesize sliderLabel;
-@synthesize switch;
 
 
 
 - (void)dealloc {
     [slider release];
     [sliderLabel release];
-    [switch release];
     [switchLabel release];
     [sswitch release];
     [stepper release];
@@ -36,7 +34,6 @@
 - (void)viewDidUnload {
     [self setSlider:nil];
     [self setSliderLabel:nil];
-    [self setSwitch:nil];
     [self setSwitchLabel:nil];
     [self setSswitch:nil];
     [self setStepper:nil];

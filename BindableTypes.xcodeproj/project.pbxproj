@@ -21,6 +21,11 @@
 		CA79D817152C5CE300D439DA /* BindableSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D816152C5CE200D439DA /* BindableSliderViewController.m */; };
 		CA79D81A152C5D0300D439DA /* BTNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D819152C5D0300D439DA /* BTNumber.m */; };
 		CA79D848152C6D6100D439DA /* BindableSliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA79D847152C6D6100D439DA /* BindableSliderView.xib */; };
+		CA79D87E152C7F2300D439DA /* BTTextFieldString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D87D152C7F2300D439DA /* BTTextFieldString.m */; };
+		CA79D884152C838E00D439DA /* BTTextViewString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D883152C838E00D439DA /* BTTextViewString.m */; };
+		CA79D887152C865B00D439DA /* BTBaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D886152C865A00D439DA /* BTBaseString.m */; };
+		CA79D88A152C8CA800D439DA /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D889152C8CA800D439DA /* BTBaseNumber.m */; };
+		CA79D88D152C8CF900D439DA /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D88C152C8CF900D439DA /* BTSliderNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,16 @@
 		CA79D818152C5D0300D439DA /* BTNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTNumber.h; path = BindableTypes/BTNumber.h; sourceTree = "<group>"; };
 		CA79D819152C5D0300D439DA /* BTNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTNumber.m; path = BindableTypes/BTNumber.m; sourceTree = "<group>"; };
 		CA79D847152C6D6100D439DA /* BindableSliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BindableSliderView.xib; sourceTree = "<group>"; };
+		CA79D87C152C7F2300D439DA /* BTTextFieldString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTTextFieldString.h; path = BindableTypes/BTTextFieldString.h; sourceTree = "<group>"; };
+		CA79D87D152C7F2300D439DA /* BTTextFieldString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTTextFieldString.m; path = BindableTypes/BTTextFieldString.m; sourceTree = "<group>"; };
+		CA79D882152C838E00D439DA /* BTTextViewString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTTextViewString.h; path = BindableTypes/BTTextViewString.h; sourceTree = "<group>"; };
+		CA79D883152C838E00D439DA /* BTTextViewString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTTextViewString.m; path = BindableTypes/BTTextViewString.m; sourceTree = "<group>"; };
+		CA79D885152C865A00D439DA /* BTBaseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTBaseString.h; path = BindableTypes/BTBaseString.h; sourceTree = "<group>"; };
+		CA79D886152C865A00D439DA /* BTBaseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTBaseString.m; path = BindableTypes/BTBaseString.m; sourceTree = "<group>"; };
+		CA79D888152C8CA800D439DA /* BTBaseNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBaseNumber.h; sourceTree = "<group>"; };
+		CA79D889152C8CA800D439DA /* BTBaseNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBaseNumber.m; sourceTree = "<group>"; };
+		CA79D88B152C8CF900D439DA /* BTSliderNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSliderNumber.h; sourceTree = "<group>"; };
+		CA79D88C152C8CF900D439DA /* BTSliderNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSliderNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +160,8 @@
 		CA79D800152C19D400D439DA /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				CA79D808152C23FF00D439DA /* BTString.h */,
-				CA79D809152C23FF00D439DA /* BTString.m */,
-				CA79D818152C5D0300D439DA /* BTNumber.h */,
-				CA79D819152C5D0300D439DA /* BTNumber.m */,
+				CA79D881152C835B00D439DA /* BTNumber */,
+				CA79D880152C834C00D439DA /* BTString */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -170,6 +183,34 @@
 				CA79D847152C6D6100D439DA /* BindableSliderView.xib */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		CA79D880152C834C00D439DA /* BTString */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D808152C23FF00D439DA /* BTString.h */,
+				CA79D809152C23FF00D439DA /* BTString.m */,
+				CA79D87C152C7F2300D439DA /* BTTextFieldString.h */,
+				CA79D87D152C7F2300D439DA /* BTTextFieldString.m */,
+				CA79D882152C838E00D439DA /* BTTextViewString.h */,
+				CA79D883152C838E00D439DA /* BTTextViewString.m */,
+				CA79D885152C865A00D439DA /* BTBaseString.h */,
+				CA79D886152C865A00D439DA /* BTBaseString.m */,
+			);
+			name = BTString;
+			sourceTree = "<group>";
+		};
+		CA79D881152C835B00D439DA /* BTNumber */ = {
+			isa = PBXGroup;
+			children = (
+				CA79D818152C5D0300D439DA /* BTNumber.h */,
+				CA79D819152C5D0300D439DA /* BTNumber.m */,
+				CA79D888152C8CA800D439DA /* BTBaseNumber.h */,
+				CA79D889152C8CA800D439DA /* BTBaseNumber.m */,
+				CA79D88B152C8CF900D439DA /* BTSliderNumber.h */,
+				CA79D88C152C8CF900D439DA /* BTSliderNumber.m */,
+			);
+			name = BTNumber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +285,11 @@
 				CA79D812152C2D0A00D439DA /* BindableTextViewViewController.m in Sources */,
 				CA79D817152C5CE300D439DA /* BindableSliderViewController.m in Sources */,
 				CA79D81A152C5D0300D439DA /* BTNumber.m in Sources */,
+				CA79D87E152C7F2300D439DA /* BTTextFieldString.m in Sources */,
+				CA79D884152C838E00D439DA /* BTTextViewString.m in Sources */,
+				CA79D887152C865B00D439DA /* BTBaseString.m in Sources */,
+				CA79D88A152C8CA800D439DA /* BTBaseNumber.m in Sources */,
+				CA79D88D152C8CF900D439DA /* BTSliderNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +391,7 @@
 				CA79D7F8152C197500D439DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,21 +10,26 @@
 
 @interface BTString : NSObject
 
-//  bind with text field
-- (BTString *)bindTextField:(UITextField *)aTextField;
-- (BTString *)bindTextField:(UITextField *)aTextField 
-                          withDelegate:(id<UITextFieldDelegate>)aDelegate;
-//  bind with text view
-- (BTString *)bindTextView:(UITextView *)aTextView;
-- (BTString *)bindTextView:(UITextView *)aTextView 
-              withDelegate:(id<UITextViewDelegate>)aDelegate;
++ (BTString *)stringWithTextField:(UITextField *)aTextField;
++ (BTString *)stringWithTextField:(UITextField *)aTextField 
+                     withDelegate:(id<UITextFieldDelegate>)aDelegate;
++ (BTString *)stringWithTextField:(UITextField *)aTextField 
+                       withString:(NSString *)aString;
++ (BTString *)stringWithTextField:(UITextField *)aTextField 
+                       withString:(NSString *)aString 
+                     withDelegate:(id<UITextFieldDelegate>)aDelegate;
 
-//  bind with label
-- (BTString *)bindLabel:(UILabel *)aLabel;
++ (BTString *)stringWithTextView:(UITextView *)aTextView;
++ (BTString *)stringWithTextView:(UITextView *)aTextView 
+                      withString:(NSString *)aString;
++ (BTString *)stringWithTextView:(UITextView *)aTextView 
+                    withDelegate:(id<UITextViewDelegate>)aDelegate;
++ (BTString *)stringWithTextView:(UITextView *)aTextView 
+                      withString:(NSString *)aString 
+                    withDelegate:(id<UITextViewDelegate>)aDelegate;
 
-- (BTString *)unbind;
-
-- (id)initWithString:(NSString *)aString;
+- (void)bindLabel:(UILabel *)aLabel;
+- (void)unbind;
 - (NSString *)stringValue;
 
 @end

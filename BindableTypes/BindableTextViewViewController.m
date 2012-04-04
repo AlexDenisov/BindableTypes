@@ -21,8 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.descriptionString = [[[BTString alloc] init] autorelease];
-    [self.descriptionString bindTextView:self.descriptionTextView];
+    self.descriptionString = [BTString stringWithTextView:self.descriptionTextView];
     [self.descriptionString bindLabel:self.descriptionLabel];
 }
 

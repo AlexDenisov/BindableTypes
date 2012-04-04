@@ -29,16 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.firstName = [[[BTString alloc] init] autorelease];
-    [self.firstName bindTextField:self.firstNameTextField];
+    self.firstName = [BTString stringWithTextField:self.firstNameTextField];
     [self.firstName bindLabel:self.firstNameLabel];
     
-    self.lastName = [[[BTString alloc] init] autorelease];
-    [self.lastName bindTextField:self.lastNameTextField];
+    self.lastName = [BTString stringWithTextField:self.lastNameTextField];
     [self.lastName bindLabel:self.lastNameLabel];
     
-    self.nickName = [[[BTString alloc] init] autorelease];
-    [self.nickName bindTextField:self.nickNameTextField];
+    self.nickName = [BTString stringWithTextField:self.nickNameTextField];
     [self.nickName bindLabel:self.nickNameLabel];
     
 }
