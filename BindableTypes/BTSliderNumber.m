@@ -10,4 +10,17 @@
 
 @implementation BTSliderNumber
 
+@synthesize boundedSlider;
+
+- (void)bindWithSlider:(UISlider *)aSlider {
+    self.boundedSlider = aSlider;
+    [self.boundedSlider addTarget:self
+                           action:@selector(valueDidChanged:)
+                 forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)valueDidChanged:(id)aSender {
+    NSLog(@"%@", aSender);
+}
+
 @end

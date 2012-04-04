@@ -7,6 +7,7 @@
 //
 
 #import "BindableSliderViewController.h"
+#import "BTNumber.h"
 
 @interface BindableSliderViewController ()
 
@@ -20,7 +21,12 @@
 @synthesize slider;
 @synthesize sliderLabel;
 
+@synthesize sliderNumber;
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.sliderNumber = [BTNumber numberWithSlider:self.slider];
+}
 
 - (void)dealloc {
     [slider release];

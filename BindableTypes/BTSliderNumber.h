@@ -10,4 +10,10 @@
 
 @interface BTSliderNumber : BTBaseNumber
 
+@property (nonatomic, retain) UISlider *boundedSlider;
+
+- (void)bindWithSlider:(UISlider *)aSlider;
+
+- (void)valueDidChanged:(id)aSender;
+
 @end

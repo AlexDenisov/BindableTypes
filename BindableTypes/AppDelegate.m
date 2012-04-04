@@ -12,9 +12,9 @@
 - (void)initTabBar;
 @end
 
-const char *const kControllers[] = {"BindableTextField", "BindableTextView"};
-const char *const kTabBarItems[] = {"TextField", "TextView"};
-const int kControllersCount = 2;
+const char *const kControllers[] = {"BindableTextField", "BindableTextView", "BindableSlider"};
+const char *const kTabBarItems[] = {"TextField", "TextView", "BTNumber"};
+const int kControllersCount = 3;
 
 @implementation AppDelegate
 

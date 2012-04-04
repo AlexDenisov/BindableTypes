@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class BTNumber;
+
 @interface BindableSliderViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UISlider *slider;
@@ -16,4 +18,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *switchLabel;
 @property (retain, nonatomic) IBOutlet UIStepper *stepper;
 @property (retain, nonatomic) IBOutlet UILabel *stepperLabel;
+
+@property (nonatomic, retain) BTNumber *sliderNumber;
+
 @end

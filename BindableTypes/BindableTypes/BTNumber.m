@@ -7,7 +7,14 @@
 //
 
 #import "BTNumber.h"
+#import "BTSliderNumber.h"
 
 @implementation BTNumber
+
++ (BTNumber *)numberWithSlider:(UISlider *)aSlider {
+    BTSliderNumber *number = [[[BTSliderNumber alloc] init] autorelease];
+    [number bindWithSlider:aSlider];
+    return number;
+}
 
 @end

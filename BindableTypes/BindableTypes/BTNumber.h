@@ -10,4 +10,6 @@
 
 @interface BTNumber : NSObject
 
++ (BTNumber *)numberWithSlider:(UISlider *)aSlider;
+
 @end
