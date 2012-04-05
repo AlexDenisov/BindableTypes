@@ -8,11 +8,17 @@
 
 #import "BTSliderNumber.h"
 
+@interface BTSliderNumber ()
+
+@property (nonatomic, retain) UISlider *boundedSlider;
+
+@end
+
 @implementation BTSliderNumber
 
 @synthesize boundedSlider;
 
-- (void)bindWithSlider:(UISlider *)aSlider {
+- (void)bindSlider:(UISlider *)aSlider {
     self.boundedSlider = aSlider;
     if(self.boundedNumber){
         [self.boundedSlider setValue:self.boundedNumber.floatValue];

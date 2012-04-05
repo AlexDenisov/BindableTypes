@@ -9,10 +9,5 @@
 #import "BTBaseString.h"
 
 @interface BTTextViewString : BTBaseString
-
-//  bind with text view
 - (BTString *)bindTextView:(UITextView *)aTextView;
-- (BTString *)bindTextView:(UITextView *)aTextView 
-              withDelegate:(id<UITextViewDelegate>)aDelegate;
-
 @end

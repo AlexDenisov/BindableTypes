@@ -14,7 +14,6 @@
 
 #pragma mark - 
 
-- (void)unbind {}
 - (void)bindLabel:(UILabel *)aLabel {}
 - (NSString *)stringValue {return nil;}
 
@@ -22,15 +21,8 @@
 
 + (BTString *)stringWithTextField:(UITextField *)aTextField {
     return [self stringWithTextField:aTextField
-                        withDelegate:nil];
-}
-
-+ (BTString *)stringWithTextField:(UITextField *)aTextField 
-                     withDelegate:(id<UITextFieldDelegate>)aDelegate
-{
-    return [self stringWithTextField:aTextField
                           withString:nil
-                        withDelegate:aDelegate];
+                        withDelegate:nil];
 }
 
 + (BTString *)stringWithTextField:(UITextField *)aTextField 
@@ -46,9 +38,12 @@
                      withDelegate:(id<UITextFieldDelegate>)aDelegate
 {
     BTTextFieldString *string = [[[BTTextFieldString alloc] initWithString:aString] autorelease];
-    [string bindTextField:aTextField withDelegate:aDelegate];
+    [string bindTextField:aTextField];
+    [string setDelegate:aDelegate];
     return string;
 }
+
+#pragma mark - BTTextFieldString
 
 + (BTString *)stringWithTextView:(UITextView *)aTextView {
     return [self stringWithTextView:aTextView
@@ -65,19 +60,12 @@
 }
 
 + (BTString *)stringWithTextView:(UITextView *)aTextView 
-                    withDelegate:(id<UITextViewDelegate>)aDelegate 
-{
-    return [self stringWithTextView:aTextView
-                         withString:nil
-                       withDelegate:aDelegate];
-}
-
-+ (BTString *)stringWithTextView:(UITextView *)aTextView 
                       withString:(NSString *)aString 
                     withDelegate:(id<UITextViewDelegate>)aDelegate 
 {
     BTTextViewString *string = [[[BTTextViewString alloc] initWithString:aString] autorelease];
-    [string bindTextView:aTextView withDelegate:aDelegate];
+    [string bindTextView:aTextView];
+    [string setDelegate:aDelegate];
     return string;
 }
 

@@ -31,7 +31,7 @@
     [self.sliderNumber bindLabel:self.sliderLabel];
     self.stepperNumber = [BTNumber numberWithStepper:self.stepper];
     [self.stepperNumber bindLabel:self.stepperLabel];
-    self.switchNumber = [BTNumber numberwithSwitch:self.sswitch];
+    self.switchNumber = [BTNumber numberWithSwitch:self.sswitch];
     [self.switchNumber bindLabel:self.switchLabel];
 }
 

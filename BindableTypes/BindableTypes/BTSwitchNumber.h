@@ -9,9 +9,5 @@
 #import "BTBaseNumber.h"
 
 @interface BTSwitchNumber : BTBaseNumber
-
-@property (nonatomic, assign) UISwitch *boundedSwitch;
-
 - (void)bindSwitch:(UISwitch *)aSwitch;
-
 @end

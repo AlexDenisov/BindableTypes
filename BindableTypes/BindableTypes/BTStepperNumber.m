@@ -8,6 +8,12 @@
 
 #import "BTStepperNumber.h"
 
+@interface BTStepperNumber ()
+
+@property (nonatomic, assign) UIStepper *boundedStepper;
+
+@end
+
 @implementation BTStepperNumber
 
 @synthesize boundedStepper;

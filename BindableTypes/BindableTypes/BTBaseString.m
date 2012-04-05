@@ -29,7 +29,6 @@
 }
 
 - (void)dealloc {
-    [self unbind];
     self.boundedString = nil;
     [super dealloc];
 }
@@ -40,6 +39,9 @@
                        context:(void *)context
 {
     if([keyPath isEqualToString:@"boundedString"]){
+        if([self isDelegateRespondsToSelector:@selector(valueDidChanged:)]){
+            [self.delegate valueDidChanged:self.boundedString];
+        }
         [self updateLabel];
     }
 }

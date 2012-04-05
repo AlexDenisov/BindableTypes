@@ -7,29 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BTValueProtocol.h"
 
 @interface BTString : NSObject
 
 + (BTString *)stringWithTextField:(UITextField *)aTextField;
 + (BTString *)stringWithTextField:(UITextField *)aTextField 
-                     withDelegate:(id<UITextFieldDelegate>)aDelegate;
-+ (BTString *)stringWithTextField:(UITextField *)aTextField 
                        withString:(NSString *)aString;
 + (BTString *)stringWithTextField:(UITextField *)aTextField 
                        withString:(NSString *)aString 
-                     withDelegate:(id<UITextFieldDelegate>)aDelegate;
+                     withDelegate:(id<UITextFieldDelegate, BTValueProtocol>)aDelegate;
 
 + (BTString *)stringWithTextView:(UITextView *)aTextView;
 + (BTString *)stringWithTextView:(UITextView *)aTextView 
                       withString:(NSString *)aString;
 + (BTString *)stringWithTextView:(UITextView *)aTextView 
-                    withDelegate:(id<UITextViewDelegate>)aDelegate;
-+ (BTString *)stringWithTextView:(UITextView *)aTextView 
                       withString:(NSString *)aString 
-                    withDelegate:(id<UITextViewDelegate>)aDelegate;
+                    withDelegate:(id<UITextViewDelegate, BTValueProtocol>)aDelegate;
 
 - (void)bindLabel:(UILabel *)aLabel;
-- (void)unbind;
 - (NSString *)stringValue;
 
 @end

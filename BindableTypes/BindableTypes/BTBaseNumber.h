@@ -10,9 +10,11 @@
 
 @interface BTBaseNumber : BTNumber
 
+@property (nonatomic, assign) id delegate;
 @property (nonatomic, retain) NSNumber *boundedNumber;
 @property (nonatomic, assign) UILabel *boundedLabel;
 
+- (BOOL)isDelegateRespondsToSelector:(SEL)aSelector;
 - (id)initWithNumber:(NSNumber *)aNumber;
 - (void)updateLabel;
 - (NSString *)labelText;

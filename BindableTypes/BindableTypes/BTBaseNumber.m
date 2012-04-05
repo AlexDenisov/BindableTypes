@@ -12,6 +12,7 @@
 
 @synthesize boundedNumber;
 @synthesize boundedLabel;
+@synthesize delegate;
 
 - (id)init {
     return [self initWithNumber:nil];
@@ -44,8 +45,15 @@
                        context:(void *)context
 {
     if([keyPath isEqualToString:@"boundedNumber"]){
+        if([self isDelegateRespondsToSelector:@selector(valueDidChanged:)]){
+            [self.delegate valueDidChanged:self.boundedNumber];
+        }
         [self updateLabel];
     }
+}
+
+- (BOOL)isDelegateRespondsToSelector:(SEL)aSelector {
+    return [self.delegate respondsToSelector:aSelector];
 }
 
 - (void)updateLabel {

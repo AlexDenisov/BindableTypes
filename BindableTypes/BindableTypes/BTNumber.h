@@ -7,15 +7,40 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BTValueProtocol.h"
 
 @interface BTNumber : NSObject
 
+#pragma mark - BTNumber with UISlider
+
 + (BTNumber *)numberWithSlider:(UISlider *)aSlider;
++ (BTNumber *)numberWithSlider:(UISlider *)aSlider 
+                    withNumber:(NSNumber *)aNumber;
++ (BTNumber *)numberWithSlider:(UISlider *)aSlider 
+                    withNumber:(NSNumber *)aNumber 
+                  withDelegate:(id<BTValueProtocol>)aDelegate;
+
+#pragma mark - BTNumber with UIStepper
+
 + (BTNumber *)numberWithStepper:(UIStepper *)aStepper;
-+ (BTNumber *)numberwithSwitch:(UISwitch *)aSwitch;
++ (BTNumber *)numberWithStepper:(UIStepper *)aStepper 
+                     withNumber:(NSNumber *)aNumber;
++ (BTNumber *)numberWithStepper:(UIStepper *)aStepper 
+                     withNumber:(NSNumber *)aNumber 
+                   withDelegate:(id<BTValueProtocol>)aDelegate;
+
+#pragma mark - BTNumber with UISwitch
+
++ (BTNumber *)numberWithSwitch:(UISwitch *)aSwitch;
++ (BTNumber *)numberWithSwitch:(UISwitch *)aSwitch 
+                    withNumber:(NSNumber *)aNumber;
++ (BTNumber *)numberWithSwitch:(UISwitch *)aSwitch 
+                    withNumber:(NSNumber *)aNumber 
+                  withDelegate:(id<BTValueProtocol>)aDelegate;
+
+#pragma mark - 
 
 - (void)bindLabel:(UILabel *)aLabel;
-
 - (NSNumber *)numberValue;
 
 @end

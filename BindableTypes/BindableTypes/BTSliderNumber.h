@@ -9,9 +9,5 @@
 #import "BTBaseNumber.h"
 
 @interface BTSliderNumber : BTBaseNumber
-
-@property (nonatomic, retain) UISlider *boundedSlider;
-
-- (void)bindWithSlider:(UISlider *)aSlider;
-
+- (void)bindSlider:(UISlider *)aSlider;
 @end

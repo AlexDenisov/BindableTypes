@@ -8,6 +8,10 @@
 
 #import "BTSwitchNumber.h"
 
+@interface  BTSwitchNumber ()
+@property (nonatomic, assign) UISwitch *boundedSwitch;
+@end
+
 @implementation BTSwitchNumber
 
 @synthesize boundedSwitch;

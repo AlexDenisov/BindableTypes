@@ -9,9 +9,5 @@
 #import "BTBaseNumber.h"
 
 @interface BTStepperNumber : BTBaseNumber
-
-@property (nonatomic, assign) UIStepper *boundedStepper;
-
 - (void)bindStepper:(UIStepper *)aStepper;
-
 @end

@@ -9,10 +9,5 @@
 #import "BTBaseString.h"
 
 @interface BTTextFieldString : BTBaseString
-
 - (BTString *)bindTextField:(UITextField *)aTextField;
-- (BTString *)bindTextField:(UITextField *)aTextField 
-               withDelegate:(id<UITextFieldDelegate>)aDelegate;
-
-
 @end
