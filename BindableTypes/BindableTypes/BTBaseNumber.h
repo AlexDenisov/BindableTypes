@@ -16,5 +16,6 @@
 - (id)initWithNumber:(NSNumber *)aNumber;
 - (void)updateLabel;
 - (NSString *)labelText;
+- (void)valueDidChanged:(id)aSender;
 
 @end

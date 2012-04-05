@@ -14,6 +14,4 @@
 
 - (void)bindWithSlider:(UISlider *)aSlider;
 
-- (void)valueDidChanged:(id)aSender;
-
 @end

@@ -29,6 +29,11 @@
     return self;
 }
 
+- (void)dealloc {
+    self.boundedNumber = nil;
+    [super dealloc];
+}
+
 - (NSNumber *)numberValue {
     return self.boundedNumber;
 }
@@ -53,5 +58,6 @@
 }
 
 - (NSString *)labelText {return  nil;}
+- (void)valueDidChanged:(id)aSender {}
 
 @end

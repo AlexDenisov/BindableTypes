@@ -20,5 +20,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *stepperLabel;
 
 @property (nonatomic, retain) BTNumber *sliderNumber;
+@property (nonatomic, retain) BTNumber *stepperNumber;
 
 @end

@@ -11,6 +11,7 @@
 @interface BTNumber : NSObject
 
 + (BTNumber *)numberWithSlider:(UISlider *)aSlider;
++ (BTNumber *)numberWithStepper:(UIStepper *)aStepper;
 
 - (void)bindLabel:(UILabel *)aLabel;
 

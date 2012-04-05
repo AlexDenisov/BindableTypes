@@ -26,6 +26,7 @@
 		CA79D887152C865B00D439DA /* BTBaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D886152C865A00D439DA /* BTBaseString.m */; };
 		CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */; };
 		CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */; };
+		CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,9 @@
 		CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTBaseNumber.m; path = BindableTypes/BTBaseNumber.m; sourceTree = "<group>"; };
 		CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSliderNumber.h; path = BindableTypes/BTSliderNumber.h; sourceTree = "<group>"; };
 		CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSliderNumber.m; path = BindableTypes/BTSliderNumber.m; sourceTree = "<group>"; };
+		CA8D9EC1152D898F005F9073 /* BTValueProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTValueProtocol.h; sourceTree = "<group>"; };
+		CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTStepperNumber.h; path = BindableTypes/BTStepperNumber.h; sourceTree = "<group>"; };
+		CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTStepperNumber.m; path = BindableTypes/BTStepperNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 		CA79D800152C19D400D439DA /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				CA8D9EC0152D896E005F9073 /* Protocol */,
 				CA79D881152C835B00D439DA /* BTNumber */,
 				CA79D880152C834C00D439DA /* BTString */,
 			);
@@ -209,8 +214,18 @@
 				CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */,
 				CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */,
 				CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */,
+				CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */,
+				CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */,
 			);
 			name = BTNumber;
+			sourceTree = "<group>";
+		};
+		CA8D9EC0152D896E005F9073 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA8D9EC1152D898F005F9073 /* BTValueProtocol.h */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +305,7 @@
 				CA79D887152C865B00D439DA /* BTBaseString.m in Sources */,
 				CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */,
 				CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */,
+				CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

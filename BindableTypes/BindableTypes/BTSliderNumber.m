@@ -25,10 +25,11 @@
 }
 
 - (NSString *)labelText {
-    if(self.boundedNumber == nil){
-        return @"0";
+    NSNumber *number = self.boundedNumber;
+    if(number == nil){
+        number = [NSNumber numberWithFloat:self.boundedSlider.value];
     }
-    return [NSString stringWithFormat:@"%.2f", [self.boundedNumber floatValue]];
+    return [NSString stringWithFormat:@"%.2f", number.floatValue];
 }
 
 @end

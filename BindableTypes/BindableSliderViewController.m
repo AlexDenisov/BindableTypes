@@ -20,6 +20,7 @@
 @synthesize stepperLabel;
 @synthesize slider;
 @synthesize sliderLabel;
+@synthesize stepperNumber;
 
 @synthesize sliderNumber;
 
@@ -27,6 +28,8 @@
     [super viewDidLoad];
     self.sliderNumber = [BTNumber numberWithSlider:self.slider];
     [self.sliderNumber bindLabel:self.sliderLabel];
+    self.stepperNumber = [BTNumber numberWithStepper:self.stepper];
+    [self.stepperNumber bindLabel:self.stepperLabel];
 }
 
 - (void)dealloc {
