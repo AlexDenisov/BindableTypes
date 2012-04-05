@@ -28,6 +28,7 @@
 		CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */; };
 		CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */; };
 		CA8D9EC7152D8F41005F9073 /* BTSwitchNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */; };
+		CA8D9ECF152DB6F7005F9073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA8D9ECE152DB6F7005F9073 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTStepperNumber.m; path = BindableTypes/BTStepperNumber.m; sourceTree = "<group>"; };
 		CA8D9EC5152D8F40005F9073 /* BTSwitchNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSwitchNumber.h; path = BindableTypes/BTSwitchNumber.h; sourceTree = "<group>"; };
 		CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSwitchNumber.m; path = BindableTypes/BTSwitchNumber.m; sourceTree = "<group>"; };
+		CA8D9ECE152DB6F7005F9073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		CA79D7BF152C197500D439DA = {
 			isa = PBXGroup;
 			children = (
+				CA8D9ECC152DB6D9005F9073 /* Readme */,
 				CA79D7D4152C197500D439DA /* BindableTypes */,
 				CA79D7CD152C197500D439DA /* Frameworks */,
 				CA79D7CB152C197500D439DA /* Products */,
@@ -233,6 +236,14 @@
 			name = Protocol;
 			sourceTree = "<group>";
 		};
+		CA8D9ECC152DB6D9005F9073 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				CA8D9ECE152DB6F7005F9073 /* README.md */,
+			);
+			name = Readme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +299,7 @@
 				CA79D805152C1A0200D439DA /* BindableTextFieldView.xib in Resources */,
 				CA79D814152C2D2400D439DA /* BindableTextViewView.xib in Resources */,
 				CA79D848152C6D6100D439DA /* BindableSliderView.xib in Resources */,
+				CA8D9ECF152DB6F7005F9073 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
