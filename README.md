@@ -2,7 +2,7 @@
 
 ### About
 
-The framework consists of two class-clusters - BTNumber and BTString. 
+The framework consists of two class-clusters - BTNumber and BTString.   
 These classes allow you to bind Foundation data types with CocoaTouch controls without any delegates.
 
 ### Features
@@ -10,7 +10,7 @@ These classes allow you to bind Foundation data types with CocoaTouch controls w
 - Binding in one string
 - Only actual values at any time
 
-**BTString**: allows to bind NSString with UITextField or UITextView. 
+**BTString**: allows to bind NSString with UITextField or UITextView.   
 **BTNumber**: NSNumber binds with UISlider, UISwitch or UIStepper.
 
 ### Installation
@@ -63,4 +63,6 @@ EditOrderViewController.m
 
 Now you always have the actual values: in the model and in view.
 
+### Contacts
 
+Bugs, questions and suggestions please send to 1101.debian@gmail.com.
