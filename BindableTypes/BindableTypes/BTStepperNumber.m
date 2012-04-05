@@ -14,6 +14,12 @@
 
 - (void)bindStepper:(UIStepper *)aStepper {
     self.boundedStepper = aStepper;
+    if(self.boundedNumber){
+        [self.boundedStepper setValue:self.boundedNumber.doubleValue];
+    }else {
+        self.boundedNumber = [NSNumber numberWithInt:self.boundedStepper.value];
+    }
+    
     [self.boundedStepper addTarget:self
                             action:@selector(valueDidChanged:)
                   forControlEvents:UIControlEventValueChanged];
@@ -25,11 +31,7 @@
 }
 
 - (NSString *)labelText {
-    NSNumber *number = self.boundedNumber;
-    if(number == nil){
-        number = [NSNumber numberWithDouble:self.boundedStepper.value];
-    }
-    return [NSString stringWithFormat:@"%@", number];
+    return [NSString stringWithFormat:@"%d", self.boundedNumber.intValue];
 }
 
 @end

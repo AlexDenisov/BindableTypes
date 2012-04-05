@@ -21,5 +21,6 @@
 
 @property (nonatomic, retain) BTNumber *sliderNumber;
 @property (nonatomic, retain) BTNumber *stepperNumber;
+@property (nonatomic, retain) BTNumber *switchNumber;
 
 @end

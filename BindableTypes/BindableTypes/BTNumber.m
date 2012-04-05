@@ -9,6 +9,7 @@
 #import "BTNumber.h"
 #import "BTSliderNumber.h"
 #import "BTStepperNumber.h"
+#import "BTSwitchNumber.h"
 
 @implementation BTNumber
 
@@ -21,6 +22,12 @@
 + (BTNumber *)numberWithStepper:(UIStepper *)aStepper {
     BTStepperNumber *number = [[BTStepperNumber alloc] init];
     [number bindStepper:aStepper];
+    return number;
+}
+
++ (BTNumber *)numberwithSwitch:(UISwitch *)aSwitch {
+    BTSwitchNumber *number = [[[BTSwitchNumber alloc] init] autorelease];
+    [number bindSwitch:aSwitch];
     return number;
 }
 

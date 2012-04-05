@@ -14,6 +14,7 @@
 @end
 
 @implementation BindableSliderViewController
+
 @synthesize sswitch;
 @synthesize switchLabel;
 @synthesize stepper;
@@ -21,7 +22,7 @@
 @synthesize slider;
 @synthesize sliderLabel;
 @synthesize stepperNumber;
-
+@synthesize switchNumber;
 @synthesize sliderNumber;
 
 - (void)viewDidLoad {
@@ -30,6 +31,8 @@
     [self.sliderNumber bindLabel:self.sliderLabel];
     self.stepperNumber = [BTNumber numberWithStepper:self.stepper];
     [self.stepperNumber bindLabel:self.stepperLabel];
+    self.switchNumber = [BTNumber numberwithSwitch:self.sswitch];
+    [self.switchNumber bindLabel:self.switchLabel];
 }
 
 - (void)dealloc {

@@ -27,6 +27,7 @@
 		CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */; };
 		CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */; };
 		CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */; };
+		CA8D9EC7152D8F41005F9073 /* BTSwitchNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		CA8D9EC1152D898F005F9073 /* BTValueProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTValueProtocol.h; sourceTree = "<group>"; };
 		CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTStepperNumber.h; path = BindableTypes/BTStepperNumber.h; sourceTree = "<group>"; };
 		CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTStepperNumber.m; path = BindableTypes/BTStepperNumber.m; sourceTree = "<group>"; };
+		CA8D9EC5152D8F40005F9073 /* BTSwitchNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSwitchNumber.h; path = BindableTypes/BTSwitchNumber.h; sourceTree = "<group>"; };
+		CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSwitchNumber.m; path = BindableTypes/BTSwitchNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */,
 				CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */,
 				CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */,
+				CA8D9EC5152D8F40005F9073 /* BTSwitchNumber.h */,
+				CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */,
 			);
 			name = BTNumber;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */,
 				CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */,
 				CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */,
+				CA8D9EC7152D8F41005F9073 /* BTSwitchNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

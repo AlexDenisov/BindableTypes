@@ -14,6 +14,11 @@
 
 - (void)bindWithSlider:(UISlider *)aSlider {
     self.boundedSlider = aSlider;
+    if(self.boundedNumber){
+        [self.boundedSlider setValue:self.boundedNumber.floatValue];
+    }else{
+        self.boundedNumber = [NSNumber numberWithFloat:self.boundedSlider.value];
+    }
     [self.boundedSlider addTarget:self
                            action:@selector(valueDidChanged:)
                  forControlEvents:UIControlEventValueChanged];
@@ -25,11 +30,7 @@
 }
 
 - (NSString *)labelText {
-    NSNumber *number = self.boundedNumber;
-    if(number == nil){
-        number = [NSNumber numberWithFloat:self.boundedSlider.value];
-    }
-    return [NSString stringWithFormat:@"%.2f", number.floatValue];
+    return [NSString stringWithFormat:@"%.2f", self.boundedNumber.floatValue];
 }
 
 @end

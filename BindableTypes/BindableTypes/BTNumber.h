@@ -12,6 +12,7 @@
 
 + (BTNumber *)numberWithSlider:(UISlider *)aSlider;
 + (BTNumber *)numberWithStepper:(UIStepper *)aStepper;
++ (BTNumber *)numberwithSwitch:(UISwitch *)aSwitch;
 
 - (void)bindLabel:(UILabel *)aLabel;
 
