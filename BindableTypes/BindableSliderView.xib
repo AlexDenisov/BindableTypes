@@ -49,6 +49,7 @@
 						<reference key="NSNextKeyView" ref="134426650"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIBarStyle">1</int>
 						<array key="IBUIItems">
 							<object class="IBUINavigationItem" id="1049516044">
 								<reference key="IBUINavigationBar" ref="789259853"/>

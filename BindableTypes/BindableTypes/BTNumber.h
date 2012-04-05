@@ -12,4 +12,8 @@
 
 + (BTNumber *)numberWithSlider:(UISlider *)aSlider;
 
+- (void)bindLabel:(UILabel *)aLabel;
+
+- (NSNumber *)numberValue;
+
 @end

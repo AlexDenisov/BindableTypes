@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.sliderNumber = [BTNumber numberWithSlider:self.slider];
+    [self.sliderNumber bindLabel:self.sliderLabel];
 }
 
 - (void)dealloc {

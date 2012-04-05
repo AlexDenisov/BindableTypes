@@ -24,8 +24,8 @@
 		CA79D87E152C7F2300D439DA /* BTTextFieldString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D87D152C7F2300D439DA /* BTTextFieldString.m */; };
 		CA79D884152C838E00D439DA /* BTTextViewString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D883152C838E00D439DA /* BTTextViewString.m */; };
 		CA79D887152C865B00D439DA /* BTBaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D886152C865A00D439DA /* BTBaseString.m */; };
-		CA79D88A152C8CA800D439DA /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D889152C8CA800D439DA /* BTBaseNumber.m */; };
-		CA79D88D152C8CF900D439DA /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D88C152C8CF900D439DA /* BTSliderNumber.m */; };
+		CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */; };
+		CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +58,10 @@
 		CA79D883152C838E00D439DA /* BTTextViewString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTTextViewString.m; path = BindableTypes/BTTextViewString.m; sourceTree = "<group>"; };
 		CA79D885152C865A00D439DA /* BTBaseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTBaseString.h; path = BindableTypes/BTBaseString.h; sourceTree = "<group>"; };
 		CA79D886152C865A00D439DA /* BTBaseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTBaseString.m; path = BindableTypes/BTBaseString.m; sourceTree = "<group>"; };
-		CA79D888152C8CA800D439DA /* BTBaseNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBaseNumber.h; sourceTree = "<group>"; };
-		CA79D889152C8CA800D439DA /* BTBaseNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBaseNumber.m; sourceTree = "<group>"; };
-		CA79D88B152C8CF900D439DA /* BTSliderNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSliderNumber.h; sourceTree = "<group>"; };
-		CA79D88C152C8CF900D439DA /* BTSliderNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSliderNumber.m; sourceTree = "<group>"; };
+		CA8D9EBA152D7F1E005F9073 /* BTBaseNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTBaseNumber.h; path = BindableTypes/BTBaseNumber.h; sourceTree = "<group>"; };
+		CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTBaseNumber.m; path = BindableTypes/BTBaseNumber.m; sourceTree = "<group>"; };
+		CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSliderNumber.h; path = BindableTypes/BTSliderNumber.h; sourceTree = "<group>"; };
+		CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSliderNumber.m; path = BindableTypes/BTSliderNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,12 +190,12 @@
 			children = (
 				CA79D808152C23FF00D439DA /* BTString.h */,
 				CA79D809152C23FF00D439DA /* BTString.m */,
+				CA79D885152C865A00D439DA /* BTBaseString.h */,
+				CA79D886152C865A00D439DA /* BTBaseString.m */,
 				CA79D87C152C7F2300D439DA /* BTTextFieldString.h */,
 				CA79D87D152C7F2300D439DA /* BTTextFieldString.m */,
 				CA79D882152C838E00D439DA /* BTTextViewString.h */,
 				CA79D883152C838E00D439DA /* BTTextViewString.m */,
-				CA79D885152C865A00D439DA /* BTBaseString.h */,
-				CA79D886152C865A00D439DA /* BTBaseString.m */,
 			);
 			name = BTString;
 			sourceTree = "<group>";
@@ -205,10 +205,10 @@
 			children = (
 				CA79D818152C5D0300D439DA /* BTNumber.h */,
 				CA79D819152C5D0300D439DA /* BTNumber.m */,
-				CA79D888152C8CA800D439DA /* BTBaseNumber.h */,
-				CA79D889152C8CA800D439DA /* BTBaseNumber.m */,
-				CA79D88B152C8CF900D439DA /* BTSliderNumber.h */,
-				CA79D88C152C8CF900D439DA /* BTSliderNumber.m */,
+				CA8D9EBA152D7F1E005F9073 /* BTBaseNumber.h */,
+				CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */,
+				CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */,
+				CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */,
 			);
 			name = BTNumber;
 			sourceTree = "<group>";
@@ -288,8 +288,8 @@
 				CA79D87E152C7F2300D439DA /* BTTextFieldString.m in Sources */,
 				CA79D884152C838E00D439DA /* BTTextViewString.m in Sources */,
 				CA79D887152C865B00D439DA /* BTBaseString.m in Sources */,
-				CA79D88A152C8CA800D439DA /* BTBaseNumber.m in Sources */,
-				CA79D88D152C8CF900D439DA /* BTSliderNumber.m in Sources */,
+				CA8D9EBE152D7F1E005F9073 /* BTBaseNumber.m in Sources */,
+				CA8D9EBF152D7F1E005F9073 /* BTSliderNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

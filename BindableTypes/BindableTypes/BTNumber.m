@@ -17,4 +17,7 @@
     return number;
 }
 
+- (void)bindLabel:(UILabel *)aLabel {}
+- (NSNumber *)numberValue {return nil;}
+
 @end
