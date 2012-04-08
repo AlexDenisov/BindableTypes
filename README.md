@@ -15,7 +15,12 @@ These classes allow you to bind Foundation data types with CocoaTouch controls w
 
 ### Installation
 
-//  no description yet
+    git clone git@github.com:AlexDenisov/BindableTypes.git
+
+Open with XCode and build Build_Framework target.  
+The BindableTypes.framework will be located in ~/Products/, this path can be changed in the shell-script in the Settings tab of target.  
+Open your project Settings and add BindableTypes.framework to Link Binary With Libraries section.  
+
 
 ### Usage
 
