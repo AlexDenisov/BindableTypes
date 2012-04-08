@@ -65,4 +65,4 @@ Now you always have the actual values: in the model and in view.
 
 ### Contacts
 
-Bugs, questions and suggestions please send to 1101.debian@gmail.com.
+Bugs, questions and suggestions please send to 1101.debian@gmail.com
