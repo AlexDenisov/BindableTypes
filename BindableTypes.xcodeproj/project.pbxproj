@@ -6,7 +6,41 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CA5CC9BC15320598000DA0E7 /* BuildFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA5CC9BD15320598000DA0E7 /* Build configuration list for PBXAggregateTarget "BuildFramework" */;
+			buildPhases = (
+				CA5CC9C5153205B6000DA0E7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BuildFramework;
+			productName = BuildFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		CA5CC9A7153204BB000DA0E7 /* BTNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D819152C5D0300D439DA /* BTNumber.m */; };
+		CA5CC9A8153204BB000DA0E7 /* BTBaseNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */; };
+		CA5CC9A9153204BB000DA0E7 /* BTSliderNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */; };
+		CA5CC9AA153204BB000DA0E7 /* BTStepperNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */; };
+		CA5CC9AB153204BB000DA0E7 /* BTSwitchNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */; };
+		CA5CC9AC153204BB000DA0E7 /* BTString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D809152C23FF00D439DA /* BTString.m */; };
+		CA5CC9AD153204BB000DA0E7 /* BTBaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D886152C865A00D439DA /* BTBaseString.m */; };
+		CA5CC9AE153204BB000DA0E7 /* BTTextFieldString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D87D152C7F2300D439DA /* BTTextFieldString.m */; };
+		CA5CC9AF153204BB000DA0E7 /* BTTextViewString.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79D883152C838E00D439DA /* BTTextViewString.m */; };
+		CA5CC9B3153204DF000DA0E7 /* BTNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D818152C5D0300D439DA /* BTNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA5CC9B4153204DF000DA0E7 /* BTBaseNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8D9EBA152D7F1E005F9073 /* BTBaseNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9B5153204DF000DA0E7 /* BTSliderNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9B6153204DF000DA0E7 /* BTStepperNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9B7153204DF000DA0E7 /* BTSwitchNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8D9EC5152D8F40005F9073 /* BTSwitchNumber.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9B8153204DF000DA0E7 /* BTString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D808152C23FF00D439DA /* BTString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA5CC9B9153204DF000DA0E7 /* BTBaseString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D885152C865A00D439DA /* BTBaseString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9BA153204DF000DA0E7 /* BTTextFieldString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D87C152C7F2300D439DA /* BTTextFieldString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9BB153204DF000DA0E7 /* BTTextViewString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D882152C838E00D439DA /* BTTextViewString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5CC9D115321136000DA0E7 /* BTValueProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9D315321162000DA0E7 /* BindableTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5CC9D01532111E000DA0E7 /* BindableTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA79D7CF152C197500D439DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7CE152C197500D439DA /* UIKit.framework */; };
 		CA79D7D1152C197500D439DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7D0152C197500D439DA /* Foundation.framework */; };
 		CA79D7D3152C197500D439DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7D2152C197500D439DA /* CoreGraphics.framework */; };
@@ -29,10 +63,13 @@
 		CA8D9EC4152D8A21005F9073 /* BTStepperNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */; };
 		CA8D9EC7152D8F41005F9073 /* BTSwitchNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */; };
 		CA8D9ECF152DB6F7005F9073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA8D9ECE152DB6F7005F9073 /* README.md */; };
+		CAB4A6AC1531FF8E00990738 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAB4A6AA1531FF8E00990738 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA79D7CA152C197500D439DA /* BindableTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindableTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5CC9D01532111E000DA0E7 /* BindableTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BindableTypes.h; path = BindableTypes/BindableTypes.h; sourceTree = "<group>"; };
+		CA5CC9D115321136000DA0E7 /* BTValueProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTValueProtocol.h; path = BindableTypes/BTValueProtocol.h; sourceTree = "<group>"; };
+		CA79D7CA152C197500D439DA /* BindableTypes_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindableTypes_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA79D7CE152C197500D439DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA79D7D0152C197500D439DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA79D7D2152C197500D439DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,12 +102,19 @@
 		CA8D9EBB152D7F1E005F9073 /* BTBaseNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTBaseNumber.m; path = BindableTypes/BTBaseNumber.m; sourceTree = "<group>"; };
 		CA8D9EBC152D7F1E005F9073 /* BTSliderNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSliderNumber.h; path = BindableTypes/BTSliderNumber.h; sourceTree = "<group>"; };
 		CA8D9EBD152D7F1E005F9073 /* BTSliderNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSliderNumber.m; path = BindableTypes/BTSliderNumber.m; sourceTree = "<group>"; };
-		CA8D9EC1152D898F005F9073 /* BTValueProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTValueProtocol.h; sourceTree = "<group>"; };
 		CA8D9EC2152D8A21005F9073 /* BTStepperNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTStepperNumber.h; path = BindableTypes/BTStepperNumber.h; sourceTree = "<group>"; };
 		CA8D9EC3152D8A21005F9073 /* BTStepperNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTStepperNumber.m; path = BindableTypes/BTStepperNumber.m; sourceTree = "<group>"; };
 		CA8D9EC5152D8F40005F9073 /* BTSwitchNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTSwitchNumber.h; path = BindableTypes/BTSwitchNumber.h; sourceTree = "<group>"; };
 		CA8D9EC6152D8F40005F9073 /* BTSwitchNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTSwitchNumber.m; path = BindableTypes/BTSwitchNumber.m; sourceTree = "<group>"; };
 		CA8D9ECE152DB6F7005F9073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CAB4A6A01531FF8E00990738 /* BindableTypes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindableTypes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4A6A11531FF8E00990738 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		CAB4A6A41531FF8E00990738 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CAB4A6A51531FF8E00990738 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CAB4A6A61531FF8E00990738 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAB4A6A91531FF8E00990738 /* BindableTypes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BindableTypes-Info.plist"; sourceTree = "<group>"; };
+		CAB4A6AB1531FF8E00990738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAB4A6AD1531FF8E00990738 /* BindableTypes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BindableTypes-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +128,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAB4A69D1531FF8E00990738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +143,7 @@
 			children = (
 				CA8D9ECC152DB6D9005F9073 /* Readme */,
 				CA79D7D4152C197500D439DA /* BindableTypes */,
+				CAB4A6A71531FF8E00990738 /* BindableTypes */,
 				CA79D7CD152C197500D439DA /* Frameworks */,
 				CA79D7CB152C197500D439DA /* Products */,
 			);
@@ -100,7 +152,8 @@
 		CA79D7CB152C197500D439DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA79D7CA152C197500D439DA /* BindableTypes.app */,
+				CA79D7CA152C197500D439DA /* BindableTypes_iOS.app */,
+				CAB4A6A01531FF8E00990738 /* BindableTypes.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +164,8 @@
 				CA79D7CE152C197500D439DA /* UIKit.framework */,
 				CA79D7D0152C197500D439DA /* Foundation.framework */,
 				CA79D7D2152C197500D439DA /* CoreGraphics.framework */,
+				CAB4A6A11531FF8E00990738 /* Cocoa.framework */,
+				CAB4A6A31531FF8E00990738 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +228,7 @@
 				CA8D9EC0152D896E005F9073 /* Protocol */,
 				CA79D881152C835B00D439DA /* BTNumber */,
 				CA79D880152C834C00D439DA /* BTString */,
+				CA5CC9D01532111E000DA0E7 /* BindableTypes.h */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -231,7 +287,7 @@
 		CA8D9EC0152D896E005F9073 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				CA8D9EC1152D898F005F9073 /* BTValueProtocol.h */,
+				CA5CC9D115321136000DA0E7 /* BTValueProtocol.h */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -244,12 +300,61 @@
 			name = Readme;
 			sourceTree = "<group>";
 		};
+		CAB4A6A31531FF8E00990738 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4A6A41531FF8E00990738 /* AppKit.framework */,
+				CAB4A6A51531FF8E00990738 /* CoreData.framework */,
+				CAB4A6A61531FF8E00990738 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CAB4A6A71531FF8E00990738 /* BindableTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4A6A81531FF8E00990738 /* Supporting Files */,
+			);
+			path = BindableTypes;
+			sourceTree = "<group>";
+		};
+		CAB4A6A81531FF8E00990738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4A6A91531FF8E00990738 /* BindableTypes-Info.plist */,
+				CAB4A6AA1531FF8E00990738 /* InfoPlist.strings */,
+				CAB4A6AD1531FF8E00990738 /* BindableTypes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CA5CC9B1153204C2000DA0E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5CC9B3153204DF000DA0E7 /* BTNumber.h in Headers */,
+				CA5CC9D315321162000DA0E7 /* BindableTypes.h in Headers */,
+				CA5CC9B8153204DF000DA0E7 /* BTString.h in Headers */,
+				CA5CC9B4153204DF000DA0E7 /* BTBaseNumber.h in Headers */,
+				CA5CC9B5153204DF000DA0E7 /* BTSliderNumber.h in Headers */,
+				CA5CC9B6153204DF000DA0E7 /* BTStepperNumber.h in Headers */,
+				CA5CC9B7153204DF000DA0E7 /* BTSwitchNumber.h in Headers */,
+				CA5CC9B9153204DF000DA0E7 /* BTBaseString.h in Headers */,
+				CA5CC9BA153204DF000DA0E7 /* BTTextFieldString.h in Headers */,
+				CA5CC9BB153204DF000DA0E7 /* BTTextViewString.h in Headers */,
+				CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		CA79D7C9152C197500D439DA /* BindableTypes */ = {
+		CA79D7C9152C197500D439DA /* BindableTypes_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes" */;
+			buildConfigurationList = CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes_iOS" */;
 			buildPhases = (
 				CA79D7C6152C197500D439DA /* Sources */,
 				CA79D7C7152C197500D439DA /* Frameworks */,
@@ -259,10 +364,28 @@
 			);
 			dependencies = (
 			);
+			name = BindableTypes_iOS;
+			productName = BindableTypes;
+			productReference = CA79D7CA152C197500D439DA /* BindableTypes_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAB4A69F1531FF8E00990738 /* BindableTypes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB4A6AE1531FF8E00990738 /* Build configuration list for PBXNativeTarget "BindableTypes" */;
+			buildPhases = (
+				CAB4A69C1531FF8E00990738 /* Sources */,
+				CAB4A69D1531FF8E00990738 /* Frameworks */,
+				CAB4A69E1531FF8E00990738 /* Resources */,
+				CA5CC9B1153204C2000DA0E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
 			name = BindableTypes;
 			productName = BindableTypes;
-			productReference = CA79D7CA152C197500D439DA /* BindableTypes.app */;
-			productType = "com.apple.product-type.application";
+			productReference = CAB4A6A01531FF8E00990738 /* BindableTypes.framework */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -285,7 +408,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA79D7C9152C197500D439DA /* BindableTypes */,
+				CA79D7C9152C197500D439DA /* BindableTypes_iOS */,
+				CAB4A69F1531FF8E00990738 /* BindableTypes */,
+				CA5CC9BC15320598000DA0E7 /* BuildFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -303,7 +428,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAB4A69E1531FF8E00990738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB4A6AC1531FF8E00990738 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA5CC9C5153205B6000DA0E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Thank for tutorial\n# http://db-in.com/blog/2011/07/universal-framework-iphone-ios-2-0/\n#\n# Sets the target folders and the final framework product.\nFMK_NAME=BindableTypes\nFMK_VERSION=A\n \n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=~/Products/${FMK_NAME}.framework\n \n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n \n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n \n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n \n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n \n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n \n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n \n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n \nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA79D7C6152C197500D439DA /* Sources */ = {
@@ -327,6 +476,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAB4A69C1531FF8E00990738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5CC9A7153204BB000DA0E7 /* BTNumber.m in Sources */,
+				CA5CC9A8153204BB000DA0E7 /* BTBaseNumber.m in Sources */,
+				CA5CC9A9153204BB000DA0E7 /* BTSliderNumber.m in Sources */,
+				CA5CC9AA153204BB000DA0E7 /* BTStepperNumber.m in Sources */,
+				CA5CC9AB153204BB000DA0E7 /* BTSwitchNumber.m in Sources */,
+				CA5CC9AC153204BB000DA0E7 /* BTString.m in Sources */,
+				CA5CC9AD153204BB000DA0E7 /* BTBaseString.m in Sources */,
+				CA5CC9AE153204BB000DA0E7 /* BTTextFieldString.m in Sources */,
+				CA5CC9AF153204BB000DA0E7 /* BTTextViewString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -338,9 +503,31 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		CAB4A6AA1531FF8E00990738 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB4A6AB1531FF8E00990738 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA5CC9BE15320598000DA0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA5CC9BF15320598000DA0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CA79D7F4152C197500D439DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,9 +593,69 @@
 			};
 			name = Release;
 		};
+		CAB4A6AF1531FF8E00990738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BindableTypes/BindableTypes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		CAB4A6B01531FF8E00990738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "BindableTypes/BindableTypes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA5CC9BD15320598000DA0E7 /* Build configuration list for PBXAggregateTarget "BuildFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5CC9BE15320598000DA0E7 /* Debug */,
+				CA5CC9BF15320598000DA0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CA79D7C4152C197500D439DA /* Build configuration list for PBXProject "BindableTypes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -418,11 +665,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes" */ = {
+		CA79D7F6152C197500D439DA /* Build configuration list for PBXNativeTarget "BindableTypes_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA79D7F7152C197500D439DA /* Debug */,
 				CA79D7F8152C197500D439DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB4A6AE1531FF8E00990738 /* Build configuration list for PBXNativeTarget "BindableTypes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4A6AF1531FF8E00990738 /* Debug */,
+				CAB4A6B01531FF8E00990738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
