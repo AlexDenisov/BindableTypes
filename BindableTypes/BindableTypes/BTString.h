@@ -29,4 +29,6 @@
 - (void)bindLabel:(UILabel *)aLabel;
 - (NSString *)stringValue;
 
+- (BOOL)isPresented;
+
 @end

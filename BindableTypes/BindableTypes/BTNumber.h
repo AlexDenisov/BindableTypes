@@ -44,4 +44,6 @@
 - (void)bindLabel:(UILabel *)aLabel;
 - (NSNumber *)numberValue;
 
+- (BOOL)isPresented;
+
 @end

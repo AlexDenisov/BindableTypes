@@ -112,4 +112,8 @@
 - (void)bindLabel:(UILabel *)aLabel {}
 - (NSNumber *)numberValue {return nil;}
 
+- (BOOL)isPresented {
+    return (self.numberValue != nil);
+}
+
 @end

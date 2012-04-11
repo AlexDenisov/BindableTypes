@@ -25,16 +25,14 @@
  */
 
 + (const char *)sqlType {
-    return (const char *)[NSString performSelector:@selector(sqlType)];
+    return "TEXT";
 }
 - (NSString *)toSql {
-    return [[self stringValue] performSelector:@selector(toSql)];
+    return [self stringValue];
 }
 
 + (id)fromSql:(NSString *)sqlData {
-    NSLog(@"%@", sqlData);
-    NSString *string = [NSString performSelector:@selector(fromSql:) withObject:sqlData];
-    NSLog(@"%@", string);
+    NSString *string = [sqlData copy];
     return [[[BTBaseString alloc] initWithString:string] autorelease];
 }
 
@@ -93,6 +91,10 @@
     [string bindTextView:aTextView];
     [string setDelegate:aDelegate];
     return string;
+}
+
+- (BOOL)isPresented {
+    return (self.stringValue != nil) && (self.stringValue.length);
 }
 
 @end
