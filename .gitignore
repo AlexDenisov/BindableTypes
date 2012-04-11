@@ -1,3 +1,4 @@
 .DS_Store
 BindableTypes.xcodeproj/project.xcworkspace/xcuserdata/*
 BindableTypes.xcodeproj/xcuserdata/*
+DerivedData/*

@@ -39,7 +39,7 @@
 		CA5CC9B9153204DF000DA0E7 /* BTBaseString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D885152C865A00D439DA /* BTBaseString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CA5CC9BA153204DF000DA0E7 /* BTTextFieldString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D87C152C7F2300D439DA /* BTTextFieldString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CA5CC9BB153204DF000DA0E7 /* BTTextViewString.h in Headers */ = {isa = PBXBuildFile; fileRef = CA79D882152C838E00D439DA /* BTTextViewString.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5CC9D115321136000DA0E7 /* BTValueProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5CC9D115321136000DA0E7 /* BTValueProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA5CC9D315321162000DA0E7 /* BindableTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5CC9D01532111E000DA0E7 /* BindableTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA79D7CF152C197500D439DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7CE152C197500D439DA /* UIKit.framework */; };
 		CA79D7D1152C197500D439DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79D7D0152C197500D439DA /* Foundation.framework */; };
@@ -337,6 +337,7 @@
 			files = (
 				CA5CC9B3153204DF000DA0E7 /* BTNumber.h in Headers */,
 				CA5CC9D315321162000DA0E7 /* BindableTypes.h in Headers */,
+				CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */,
 				CA5CC9B8153204DF000DA0E7 /* BTString.h in Headers */,
 				CA5CC9B4153204DF000DA0E7 /* BTBaseNumber.h in Headers */,
 				CA5CC9B5153204DF000DA0E7 /* BTSliderNumber.h in Headers */,
@@ -345,7 +346,6 @@
 				CA5CC9B9153204DF000DA0E7 /* BTBaseString.h in Headers */,
 				CA5CC9BA153204DF000DA0E7 /* BTTextFieldString.h in Headers */,
 				CA5CC9BB153204DF000DA0E7 /* BTTextViewString.h in Headers */,
-				CA5CC9D215321136000DA0E7 /* BTValueProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n# Thank for tutorial\n# http://db-in.com/blog/2011/07/universal-framework-iphone-ios-2-0/\n#\n# Sets the target folders and the final framework product.\nFMK_NAME=BindableTypes\nFMK_VERSION=A\n \n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=~/Products/${FMK_NAME}.framework\n \n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n \n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n \n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n \n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n \n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n \n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n \n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n \nrm -r \"${WRK_DIR}\"";
+			shellScript = "#\n# Thank for tutorial\n# http://db-in.com/blog/2011/07/universal-framework-iphone-ios-2-0/\n#\n# Sets the target folders and the final framework product.\nFMK_NAME=BindableTypes\nFMK_VERSION=A\n \n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=/opt/Products/${FMK_NAME}.framework\n \n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n \n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n \n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n \n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n \n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n \n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n \n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n \nrm -r \"${WRK_DIR}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -655,6 +655,7 @@
 				CA5CC9BF15320598000DA0E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA79D7C4152C197500D439DA /* Build configuration list for PBXProject "BindableTypes" */ = {
 			isa = XCConfigurationList;
