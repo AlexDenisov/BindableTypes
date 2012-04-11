@@ -33,8 +33,9 @@
     return [self.boundedNumber performSelector:@selector(toSql)];
 }
 + (id)fromSql:(NSString *)sqlData {
-    return [NSDecimalNumber performSelector:@selector(fromSql:) 
-                                 withObject:sqlData];
+    NSNumber *number = [NSDecimalNumber performSelector:@selector(fromSql:) 
+                                             withObject:sqlData];
+    return [[[BTBaseNumber alloc] initWithNumber:number] autorelease];
 }
 
 @synthesize boundedNumber;

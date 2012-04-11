@@ -8,28 +8,7 @@
 
 #import "BTBaseString.h"
 
-@interface BTBaseString ()
-+ (const char *)sqlType;
-- (NSString *)toSql;
-+ (id)fromSql:(NSString *)sqlData;
-@end
-
 @implementation BTBaseString
-
-/*
- ActiveRecord Support
- https://github.com/AlexDenisov/iActiveRecord
- */
-
-+ (const char *)sqlType {
-    return (const char *)[NSString performSelector:@selector(sqlType)];
-}
-- (NSString *)toSql {
-    return [self.boundedString performSelector:@selector(toSql)];
-}
-+ (id)fromSql:(NSString *)sqlData {
-    return [NSString performSelector:@selector(fromSql:) withObject:sqlData];
-}
 
 @synthesize boundedString;
 @synthesize boundedLabel;

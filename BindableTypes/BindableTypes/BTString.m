@@ -11,13 +11,30 @@
 #import "BTTextFieldString.h"
 #import "BTTextViewString.h"
 
+@interface BTString ()
++ (const char *)sqlType;
+- (NSString *)toSql;
++ (id)fromSql:(NSString *)sqlData;
+@end
+
 @implementation BTString
 
+/*
+ ActiveRecord Support
+ https://github.com/AlexDenisov/iActiveRecord
+ */
+
 + (const char *)sqlType {
-    return (const char *)[BTBaseString performSelector:@selector(sqlType)];
+    return (const char *)[NSString performSelector:@selector(sqlType)];
 }
+- (NSString *)toSql {
+    return [[self stringValue] performSelector:@selector(toSql)];
+}
+
 + (id)fromSql:(NSString *)sqlData {
-    NSString *string = [BTBaseString performSelector:@selector(fromSql:) withObject:sqlData];
+    NSLog(@"%@", sqlData);
+    NSString *string = [NSString performSelector:@selector(fromSql:) withObject:sqlData];
+    NSLog(@"%@", string);
     return [[[BTBaseString alloc] initWithString:string] autorelease];
 }
 
