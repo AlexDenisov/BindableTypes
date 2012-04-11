@@ -23,7 +23,7 @@
     if(self.boundedNumber){
         [self.boundedStepper setValue:self.boundedNumber.doubleValue];
     }else {
-        self.boundedNumber = [NSNumber numberWithInt:self.boundedStepper.value];
+        self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithInt:self.boundedStepper.value];
     }
     
     [self.boundedStepper addTarget:self
@@ -33,7 +33,7 @@
 
 - (void)valueDidChanged:(id)aSender {
     UIStepper *stepper = (UIStepper *)aSender;
-    self.boundedNumber = [NSNumber numberWithDouble:stepper.value];
+    self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithDouble:stepper.value];
 }
 
 - (NSString *)labelText {

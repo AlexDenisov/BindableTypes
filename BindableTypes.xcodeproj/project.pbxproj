@@ -138,6 +138,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA31B39D1535775600DEA16F /* ActiveRecordSupport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ActiveRecordSupport;
+			sourceTree = "<group>";
+		};
 		CA79D7BF152C197500D439DA = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +201,7 @@
 		CA79D7FD152C19C000D439DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CA31B39D1535775600DEA16F /* ActiveRecordSupport */,
 				CA79D801152C19DB00D439DA /* AppDelegate */,
 				CA79D800152C19D400D439DA /* Types */,
 				CA79D7FF152C19CD00D439DA /* Controllers */,

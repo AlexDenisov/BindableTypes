@@ -7,11 +7,27 @@
 //
 
 #import "BTNumber.h"
+#import "BTBaseNumber.h"
 #import "BTSliderNumber.h"
 #import "BTStepperNumber.h"
 #import "BTSwitchNumber.h"
 
 @implementation BTNumber
+
+/*
+ ActiveRecord Support
+ https://github.com/AlexDenisov/iActiveRecord
+ */
+
++ (const char *)sqlType {
+    return (const char *)[BTBaseNumber performSelector:@selector(sqlType)];
+}
+
++ (id)fromSql:(NSString *)sqlData {
+    NSNumber *number = [BTBaseNumber performSelector:@selector(fromSql:) 
+                                          withObject:sqlData];
+    return [[[BTBaseNumber alloc] initWithNumber:number] autorelease];
+}
 
 #pragma mark - UISlider
 

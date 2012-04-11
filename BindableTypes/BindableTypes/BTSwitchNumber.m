@@ -21,7 +21,7 @@
     if(self.boundedNumber){
         [self.boundedSwitch setOn:self.boundedNumber.boolValue];
     }else{
-        self.boundedNumber = [NSNumber numberWithBool:self.boundedSwitch.isOn];
+        self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithBool:self.boundedSwitch.isOn];
     }
     [self.boundedSwitch addTarget:self
                            action:@selector(valueDidChanged:)
@@ -30,7 +30,7 @@
 
 - (void)valueDidChanged:(id)aSender {
     UISwitch *aSwitch = (UISwitch *)aSender;
-    self.boundedNumber = [NSNumber numberWithBool:aSwitch.isOn];
+    self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithBool:aSwitch.isOn];
 }
 
 - (NSString *)labelText {

@@ -23,7 +23,7 @@
     if(self.boundedNumber){
         [self.boundedSlider setValue:self.boundedNumber.floatValue];
     }else{
-        self.boundedNumber = [NSNumber numberWithFloat:self.boundedSlider.value];
+        self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithFloat:self.boundedSlider.value];
     }
     [self.boundedSlider addTarget:self
                            action:@selector(valueDidChanged:)
@@ -32,7 +32,7 @@
 
 - (void)valueDidChanged:(id)aSender {
     UISlider *slider = (UISlider *)aSender;
-    self.boundedNumber = [NSNumber numberWithFloat:slider.value];
+    self.boundedNumber = (NSDecimalNumber *)[NSDecimalNumber numberWithFloat:slider.value];
 }
 
 - (NSString *)labelText {

@@ -8,7 +8,34 @@
 
 #import "BTBaseNumber.h"
 
+@interface BTBaseNumber ()
+/*
+ ActiveRecord Support
+ https://github.com/AlexDenisov/iActiveRecord
+ */
+
++ (const char *)sqlType;
+- (NSString *)toSql;
++ (id)fromSql:(NSString *)sqlData;
+@end
+
 @implementation BTBaseNumber
+
+/*
+ ActiveRecord Support
+ https://github.com/AlexDenisov/iActiveRecord
+ */
+
++ (const char *)sqlType {
+    return (const char *)[NSDecimalNumber performSelector:@selector(sqlType)];
+}
+- (NSString *)toSql {
+    return [self.boundedNumber performSelector:@selector(toSql)];
+}
++ (id)fromSql:(NSString *)sqlData {
+    return [NSDecimalNumber performSelector:@selector(fromSql:) 
+                                 withObject:sqlData];
+}
 
 @synthesize boundedNumber;
 @synthesize boundedLabel;
@@ -25,7 +52,7 @@
                forKeyPath:@"boundedNumber"
                   options:0
                   context:nil];
-        self.boundedNumber = aNumber;
+        self.boundedNumber = (NSDecimalNumber *)aNumber;
     }
     return self;
 }

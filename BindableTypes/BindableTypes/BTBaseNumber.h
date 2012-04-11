@@ -11,7 +11,7 @@
 @interface BTBaseNumber : BTNumber
 
 @property (nonatomic, assign) id delegate;
-@property (nonatomic, retain) NSNumber *boundedNumber;
+@property (nonatomic, retain) NSDecimalNumber *boundedNumber;
 @property (nonatomic, assign) UILabel *boundedLabel;
 
 - (BOOL)isDelegateRespondsToSelector:(SEL)aSelector;

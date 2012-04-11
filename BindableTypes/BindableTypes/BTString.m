@@ -7,10 +7,19 @@
 //
 
 #import "BTString.h"
+#import "BTBaseString.h"
 #import "BTTextFieldString.h"
 #import "BTTextViewString.h"
 
 @implementation BTString
+
++ (const char *)sqlType {
+    return (const char *)[BTBaseString performSelector:@selector(sqlType)];
+}
++ (id)fromSql:(NSString *)sqlData {
+    NSString *string = [BTBaseString performSelector:@selector(fromSql:) withObject:sqlData];
+    return [[[BTBaseString alloc] initWithString:string] autorelease];
+}
 
 #pragma mark - 
 
